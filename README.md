@@ -8,6 +8,12 @@ An interactive webpage that randomly generates nice/terrible patterns for the gl
 
 Will be released on February 13th.
 
+## License
+
+The images in the "original" folder are the glazed terracotta textures from Minecraft. Their copyright belongs with Mojang/Microsoft.
+
+Everything else uses the license of the repository.
+
 ## Technologies
 
 This is built using:
