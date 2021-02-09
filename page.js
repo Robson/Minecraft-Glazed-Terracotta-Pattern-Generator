@@ -441,7 +441,7 @@ function makeCachedImages() {
 	for (var colour of allColours) {
 		d3.select('#gt_' + colour).remove();
 		var image = new Image();		
-		image.src = (isImproved ? 'improved/' : '') + colour + '_glazed_terracotta.png';
+		image.src = (isImproved ? 'improved' : 'original') + '/' + colour + '_glazed_terracotta.png';
 		image.id = 'gt_' + colour;
 		image.onload = imageLoaded;
 		image.style.display = 'none';
