@@ -17,7 +17,6 @@ Everything else uses the license of the repository.
 ## Technologies
 
 This is built using:
- * C#
  * HTML
  * CSS
  * JavaScript
