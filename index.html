@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Minecraft Glazed Terracotta Pattern Generator</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap"> 		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap"> 			
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<script src="https://d3js.org/d3.v3.min.js"></script>	
+		<script src="names.js"></script>
+	</head>
+	<body>
+		<div id="imageCache" style="display: none">			
+		</div>
+		<h1>Minecraft <a href="https://minecraft.gamepedia.com/Glazed_Terracotta">Glazed Terracotta</a> Pattern Generato<span onclick="javascript:toggleImprovedTextures()">r</span></h1>
+		<div id="buttons">
+			Colour:
+			<br/>
+			<select id="userColour"></select>
+			<br/>
+			Regular Pattern:
+			<br>
+			<input type="button" value="1x1" onclick="generateRegularSequence(1, 1)" />
+			<input type="button" value="1x2" onclick="generateRegularSequence(1, 2)" />
+			<input type="button" value="2x1" onclick="generateRegularSequence(2, 1)" />
+			<input type="button" value="2x2" onclick="generateRegularSequence(2, 2)" />
+			<input type="button" value="2x4" onclick="generateRegularSequenceAlternating(2, 4)" />
+			<input type="button" value="4x2" onclick="generateRegularSequenceAlternating(4, 2)" />
+			<input type="button" value="4x4" onclick="generateRegularSequenceAlternating(4, 4)" />
+			<br/>
+			Chaotic Pattern:
+			<br>
+			<input type="button" value="Chosen Colour" onclick="generateChaoticSequenceSameColour()" />
+			<input type="button" value="Two Colours" onclick="generateChaoticSequenceTwoColours()" />
+			<input type="button" value="Any Colours" onclick="generateChaoticSequenceAnyColours()" />
+			<input type="button" value="Mess" onclick="generateMess()" />			
+		</div>
+		<div id="page">
+			<h2>Pattern</h2>
+			<div id="output">
+				<canvas id="outputPatternCanvas"></canvas>
+				<img id="outputPatternImage" src="output.png" />
+			</div>
+			<h2 id="templateTitle">Template</h2>
+			<div id="template">
+				<canvas id="outputTemplateCanvas"></canvas>
+				<img id="outputTemplateImage" src="output.png" />
+			</div>
+			<h2>Building Guide</h2>
+			<p id="buildHelpShow">
+				<input type="button" value="Help!" onclick="showBuildHelp()" />
+			</p>
+			<p id="buildHelp" style="display: none">
+				This grid matches the template above.
+				<br/>
+				To make the template horizontally:
+				<br/>
+				Decide where you want to draw the template.
+				<br/>
+				When you are facing the direction you want to view the template, this is &#x1f809;
+				<br/>
+				Place each block, whilst looking in the direction of the arrow.
+			</p>
+			<table id="buildingGuide">
+				
+			</table>
+		</div>
+		
+		<script src="page.js"></script>
+		<div id="footer">
+			<p>
+				You can use the current URL to share/bookmark this pattern.
+			</p>
+			<p>
+				<a href="https://github.com/Robson/Minecraft-Glazed-Terracotta-Pattern-Generator">View the code</a>. Written by <a href="https://robson.plus">Robson</a>.
+			</p>	
+		</div>
+	</body>
+</html>
