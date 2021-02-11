@@ -1,4 +1,4 @@
-# Minecraft Glazed Terracotta Pattern Generator
+# Minecraft *Glazed Terracotta* Pattern Generator
 
 ## Explanation
 
