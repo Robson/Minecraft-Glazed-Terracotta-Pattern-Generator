@@ -14,7 +14,7 @@ Will be released on February 13th.
 
 ## License
 
-The images in the "original" folder are the glazed terracotta textures from Minecraft. Their copyright belongs with Mojang/Microsoft.
+The images in the "textures-original" folder are the glazed terracotta textures from Minecraft. Their copyright belongs with Mojang/Microsoft.
 
 Everything else uses the license of the repository.
 
