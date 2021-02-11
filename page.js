@@ -338,10 +338,10 @@ function showSequence(colours, sequence) {
 					cell.attr('class', 'bordered');
 				}
 				switch (+fixColours(colours[y][x], sequence[y][x])) {
-					case 0: cell.html('&#x1f809;'); break;
-					case 1: cell.html('&#x1f80a;'); break;
-					case 2: cell.html('&#x1f80b;'); break;
-					case 3: cell.html('&#x1f808;'); break;
+					case 0: cell.html('&uarr;'); break;
+					case 1: cell.html('&rarr;'); break;
+					case 2: cell.html('&darr;'); break;
+					case 3: cell.html('&larr;'); break;
 				}
 				context.translate(whereX, whereY);
 				context.rotate(rot);
