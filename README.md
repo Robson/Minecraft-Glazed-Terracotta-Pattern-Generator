@@ -2,7 +2,11 @@
 
 ## Explanation
 
-An interactive webpage that randomly generates nice/terrible patterns for the glazed terracotta blocks in Minecraft.
+An interactive webpage that randomly generates nice/terrible patterns for the <a href="https://minecraft.gamepedia.com/Glazed_Terracotta">glazed terracotta blocks</a> in <a href="https://www.minecraft.net/en-us/">Minecraft</a>.
+
+For example:
+
+<img src="https://raw.githubusercontent.com/Robson/Minecraft-Glazed-Terracotta-Pattern-Generator/main/example.png" />
 
 ## Live Version
 
