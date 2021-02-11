@@ -332,16 +332,17 @@ function showSequence(colours, sequence) {
 				var rot = (90 * fixColours(colours[y][x], sequence[y][x])) * Math.PI / 180;
 				var cell = row.append('td');
 				cell.style('background', convertToHtmlColour(colours[y][x]));
-				cell.style('color', determineTextColour(colours[y][x]));
+				//cell.style('color', determineTextColour(colours[y][x]));
 				cell.attr('title', makeTitleCase(colours[y][x]))
 				if (colours[y][x] == 'white') {
 					cell.attr('class', 'bordered');
 				}
+				cell.html('<img src="arrow-' + determineTextColour(colours[y][x]) + '.png" width="32" height=32">')
 				switch (+fixColours(colours[y][x], sequence[y][x])) {
-					case 0: cell.html('&#9650;'); break; // up
-					case 1: cell.html('&#9654;'); break; // right
-					case 2: cell.html('&#9660;'); break; // down
-					case 3: cell.html('&#9664;'); break; // left
+					case 0: cell.style('transform', 'rotate(90deg)'); break; // up
+					case 1: cell.style('transform', 'rotate(0deg)'); break; // right
+					case 2: cell.style('transform', 'rotate(270deg)'); break; // down
+					case 3: cell.style('transform', 'rotate(180deg)'); break; // left
 				}
 				context.translate(whereX, whereY);
 				context.rotate(rot);
