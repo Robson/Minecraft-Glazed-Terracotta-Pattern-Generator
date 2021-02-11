@@ -332,11 +332,8 @@ function showSequence(colours, sequence) {
 				var rot = (90 * fixColours(colours[y][x], sequence[y][x])) * Math.PI / 180;
 				var cell = row.append('td');
 				cell.style('background', convertToHtmlColour(colours[y][x]));
-				//cell.style('color', determineTextColour(colours[y][x]));
+				cell.style('border', '1px solid ' + (colours[y][x] == 'white' ? 'black' : convertToHtmlColour(colours[y][x])));
 				cell.attr('title', makeTitleCase(colours[y][x]))
-				if (colours[y][x] == 'white') {
-					cell.attr('class', 'bordered');
-				}
 				var degrees = 0;
 				switch (+fixColours(colours[y][x], sequence[y][x])) {
 					case 0: degrees =  90; break; // up
