@@ -338,10 +338,10 @@ function showSequence(colours, sequence) {
 					cell.attr('class', 'bordered');
 				}
 				switch (+fixColours(colours[y][x], sequence[y][x])) {
-					case 0: cell.html('&#10148;').style('transform', 'rotate(270deg)'); break; // up
-					case 1: cell.html('&#10148;'); break; // right
-					case 2: cell.html('&#10148;').style('transform', 'rotate(90deg)'); break; // down
-					case 3: cell.html('&#10148;').style('transform', 'rotate(180deg)'); break; // left
+					case 0: cell.html('&#9650;'); break; // up
+					case 1: cell.html('&#9654;'); break; // right
+					case 2: cell.html('&#9660;'); break; // down
+					case 3: cell.html('&#9664;'); break; // left
 				}
 				context.translate(whereX, whereY);
 				context.rotate(rot);
