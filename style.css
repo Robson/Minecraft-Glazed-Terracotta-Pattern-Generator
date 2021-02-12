@@ -1,9 +1,10 @@
   html {
-	  overflow-y: scroll;
+    overflow-y: scroll;
   }
 
   body {
-    text-align: center;	
+    text-align: center;
+	padding: 40px 0;
   }
   
   body, input, select {
@@ -36,6 +37,10 @@
     
   select {
     margin: 0 0 12px;
+  }
+  
+  #page {    
+    margin: 0 auto;
   }
 
 /********** PATTERN NAME **********/ 
@@ -89,7 +94,13 @@
 /********** FOOTER **********/
 
   #footer {
-	padding: 20px 5px;
+	padding: 10px 10px 0px;
+	clear: both;
+	border: 1px dashed #999;
+	border-radius: 8px;
+	margin: 20px auto;
+	width: auto;
+	display: table;
   }
   
 /********** IMAGES **********/
@@ -101,6 +112,11 @@
   img {
 	  max-width: 100%;
 	  height: auto;
+  }
+  
+  #outputPatternImage,
+  #outputTemplateImage {
+	  margin-top: 3px;
   }
   
 /********** LINKS **********/
@@ -127,7 +143,12 @@
 /********** BUTTONS **********/
     
   #buttons {
-    margin: 20px auto 0;
+    margin: 10px auto 0;
+	padding: 10px 10px 2px;
+	border: 1px dashed #999;
+	border-radius: 8px;
+	width: auto;
+	display: table;
   }
   
   input[type="button"] {
@@ -152,4 +173,27 @@
     opacity: 1;
     cursor: default;
   }
+  
+/********** LAYOUT **********/
+
+#breaker {
+	clear: both;
+	font-size: 1px;
+}
+
+@media (min-width: 1000px) {
+	#boxPattern,
+	#boxTemplate,
+	#boxBuildingGuide {
+		display: table-cell;
+		width: auto;
+		padding: 0 15px;
+	}
+	
+	#page {
+		display: table;
+		width: auto;
+		margin: 0 auto;		
+	}
+}
   

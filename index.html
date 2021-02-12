@@ -53,22 +53,36 @@
 			<input type="button" value="Mess" onclick="generateMess()" />			
 		</div>
 		<div id="page">
-			<h2>Pattern</h2>
-			<div id="output">
-				<canvas id="outputPatternCanvas"></canvas>
-				<img id="outputPatternImage" src="output.png" alt="Pattern" />
+			<div id="boxPattern">
+				<h2>Pattern</h2>
+				<div id="output">
+					<canvas id="outputPatternCanvas"></canvas>
+					<img id="outputPatternImage" src="output.png" alt="Pattern" />
+				</div>
 			</div>
-			<h2 id="templateTitle">Template</h2>
-			<div id="template">
-				<canvas id="outputTemplateCanvas"></canvas>
-				<img id="outputTemplateImage" src="output.png" alt="Template" />
+			<div id="boxTemplate">
+				<h2 id="templateTitle">Template</h2>
+				<div id="template">
+					<canvas id="outputTemplateCanvas"></canvas>
+					<img id="outputTemplateImage" src="output.png" alt="Template" />
+				</div>
 			</div>
-			<h2>Building Guide</h2>
+			<div id="boxBuildingGuide">
+				<h2>Building Guide</h2>
+				<table id="buildingGuide">
+					
+				</table>
+			</div>
+			<div id="breaker">&nbsp;</div>
+		</div>
+		
+		<script src="page.js"></script>
+		<div id="footer">
 			<p id="buildHelpShow">
-				<input type="button" value="Help!" onclick="showBuildHelp()" />
+				<input type="button" value="Building Guide Help" onclick="showBuildHelp()" />
 			</p>
 			<p id="buildHelp" style="display: none">
-				This grid matches the template above.
+				The Building Guide grid matches the Template grid.
 				<br/>
 				To make the template horizontally:
 				<br/>
@@ -77,14 +91,7 @@
 				When you are facing the direction you want to view the template, this is up.
 				<br/>
 				Place each block, whilst looking in the direction of the arrow.
-			</p>
-			<table id="buildingGuide">
-				
-			</table>
-		</div>
-		
-		<script src="page.js"></script>
-		<div id="footer">
+			</p>		
 			<p>
 				You can use the current URL to share/bookmark this pattern.
 			</p>

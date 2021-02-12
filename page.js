@@ -417,8 +417,7 @@ function showSequence(colours, sequence) {
 	showSequencePattern(colours, sequence);
 	
 	// hide the template if the template size matches/exceeds the minimum pattern size
-	d3.select('#templateTitle').style('display', colours.length < minimumPatternLength ? null : 'none');
-	d3.select('#template').style('display', colours.length < minimumPatternLength ? null : 'none');	
+	d3.select('#boxTemplate').style('display', colours.length < minimumPatternLength ? null : 'none');	
 	
 	d3.select('#outputPatternImage').attr('title', generatePaintingName(makeTitleCase(colours[0][0])));	
 }
@@ -439,7 +438,7 @@ function imageLoaded() {
 function makeCachedImages() {
 	for (var colour of allColours) {
 		d3.select('#gt_' + colour).remove();
-		var image = new Image();		
+		var image = new Image();
 		image.src = 'textures-' + (isImproved ? 'improved' : 'original') + '/' + colour + '_glazed_terracotta.png';
 		image.id = 'gt_' + colour;
 		image.onload = imageLoaded;
