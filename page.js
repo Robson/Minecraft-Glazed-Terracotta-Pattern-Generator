@@ -337,9 +337,9 @@ function showSequence(colours, sequence) {
 				var degrees = 0;
 				switch (+fixColours(colours[y][x], sequence[y][x])) {
 					case 0: degrees =  90; break; // up
-					case 1: degrees =   0; break; // right
+					case 1: degrees = 180; break; // right
 					case 2: degrees = 270; break; // down
-					case 3: degrees = 180; break; // left
+					case 3: degrees =   0; break; // left
 				}				
 				cell.html('<img src="arrow-' + determineTextColour(colours[y][x]) + '.png" width="32" height=32" style="transform: rotate(' + degrees + 'deg)">');
 				context.translate(whereX, whereY);
