@@ -10,7 +10,7 @@ For example:
 
 ## Live Version
 
-Will be released on February 13th.
+https://robson.plus/minecraft-glazed-terracotta-pattern-generator/
 
 ## License
 
