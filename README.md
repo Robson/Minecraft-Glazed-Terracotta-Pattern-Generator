@@ -4,7 +4,6 @@
 
  * [Demo](#demo)
  * [Explanation](#explanation)
- * [Example](#example) 
  * [Live Version](#live-version)
  * [Compatibility](#compatibility)
  * [Testing](#testing) 
@@ -15,15 +14,11 @@
  
 ## Demo
 
-Coming Soon
+![Demo](https://raw.githubusercontent.com/Robson/Minecraft-Glazed-Terracotta-Pattern-Generator/main/Demo.gif)
  
 ## Explanation
 
 An interactive webpage that randomly generates nice/terrible patterns for the <a href="https://minecraft.gamepedia.com/Glazed_Terracotta">glazed terracotta blocks</a> in <a href="https://www.minecraft.net/en-us/">Minecraft</a>.
-
-## Example
-
-<img src="https://raw.githubusercontent.com/Robson/Minecraft-Glazed-Terracotta-Pattern-Generator/main/example.png" />
 
 ## Live Version
 
