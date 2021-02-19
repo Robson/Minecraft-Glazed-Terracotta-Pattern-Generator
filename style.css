@@ -1,199 +1,231 @@
-  html {
-    overflow-y: scroll;
-  }
+/********** GENERAL **********/
 
-  body {
-    text-align: center;
-	padding: 40px 0;
-  }
-  
-  body, input, select {
-    font-family: rubik, helvetica, arial, sans-serif;
-  }
-  
-  select {
-    font-size: 100%;
-  }
-  
-  h1,
-  h2 {
-    font-family: 'roboto slab', georgia, serif;
-    margin-bottom: 0;      
-  }
-  
-  h1 {
-	  color: #000;
-  }
-  
-  #template,
-  #template * {
-    padding: 0;
-    line-height: 0;
-  }
-  
-  #template {
-    margin: 0 0 10px;
-  }
-    
-  select {
-    margin: 0 0 12px;
-  }
-  
-  #page {    
-    margin: 0 auto;
-  }
+html {
+  overflow-y: scroll;
+}
 
-/********** PATTERN NAME **********/ 
+body {
+  text-align: center;
+  padding: 40px 0;
+}
 
-  #name {
-	margin-top: 0;
-	padding-top: 0;
-  }
+body,
+input,
+select {
+  font-family: rubik, helvetica, arial, sans-serif;
+}
 
-  #name span {
-	font-style: italic;
-  }
-  
+select {
+  font-size: 100%;
+}
+
+h1,
+h2 {
+  font-family: 'roboto slab', georgia, serif;
+  margin-bottom: 0;
+}
+
+h1 {
+  color: #000;
+  margin: 10px;
+  padding: 0 0 10px;
+}
+
+#template,
+#template * {
+  padding: 0;
+  line-height: 0;
+}
+
+select {
+  margin: 0 0 12px;
+}
+
+#page {
+  margin: 10px auto 0;
+}
+
+.helper {
+  font-weight: 500;
+  padding: 0;
+  margin: 8px 0 2px;
+}
+
+/********** BUTTONS **********/
+
+input[type="button"] {
+  background: #E5007E;
+  color: #fff;
+  padding: 5px 8px;
+  cursor: pointer;
+  border: 0;
+  border-bottom: 3px solid #F17EBD;
+  border-radius: 5px;
+  opacity: 0.666;
+  margin: 2px 1px 8px;
+}
+
+input[type="button"]:hover {
+  opacity: 1;
+}
+
+input[type="button"].on {
+  background: #000;
+  border-bottom: 3px solid #aaa;
+  opacity: 1;
+  cursor: default;
+}
+
+/********** PATTERN **********/
+
+#output {
+	margin: 0 2px;
+	padding: 0;
+}
+
 /********** BUILDING GUIDE **********/
 
-  #buildingGuide {
-	text-align: center;
-	margin: 0 auto;	
-	font-size: 1.5em;
-  }
+#buildingGuide {
+  text-align: center;
+  margin: 15px auto 0;
+  font-size: 1.5em;
+}
 
-  #buildingGuide td {
-	width: 1.5em;
-	height: 1.5em;
-    padding: 0;
-  }
+#buildingGuide td {
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0;
+}
 
-  #buildingGuide img {
-    vertical-align: middle;
-    padding: 0;
-  }  
-  
-  td.bordered {
-	border: 1px solid #000 !important;
-  }
+#buildingGuide img {
+  vertical-align: middle;
+  padding: 0;
+}
 
-  #buildHelp {
-	margin-top: 0;
-	padding-top: 0;
-	line-height: 1.1em;
-  }
+td.bordered {
+  border: 1px solid #000 !important;
+}
 
-  #buildHelpShow {
-	margin: 3px !important;	  
-  }  
-  
-  #buildHelpShow input {
-	margin: 0 !important;
-  }
-  
+#buildHelp {
+  margin: 0 auto;
+  padding-top: 0;
+  line-height: 1.1em;
+  font-size: 85%;
+}
+
+#buildHelpShow {
+  margin: 3px !important;
+}
+
+#buildHelpShow input {
+  margin: 0 !important;
+}
+
 /********** FOOTER **********/
 
-  #footer {
-	padding: 10px 10px 0px;
-	clear: both;
-	border: 1px dashed #999;
-	border-radius: 8px;
-	margin: 20px auto;
-	width: auto;
-	display: table;
-  }
-  
+#footer {
+  padding: 5px 10px 0 !important;
+}
+
 /********** IMAGES **********/
 
-  canvas {
-	  display: none;
-  }
-  
-  img {
-	  max-width: 100%;
-	  height: auto;
-  }
-  
-  #outputPatternImage,
-  #outputTemplateImage {
-	  margin-top: 3px;
-  }
-  
+canvas {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#outputPatternImage,
+#outputTemplateImage {
+  margin-top: 3px;
+}
+
 /********** LINKS **********/
 
-  a,
-  a:hover {
-    color: #E5007E;
-    text-decoration: none;
-  }
+a,
+a:hover {
+  color: #E5007E;
+  text-decoration: none;
+}
 
-  a:hover {
-    border-bottom: 1px dotted #E5007E;
-  }
+a:hover {
+  border-bottom: 1px dotted #E5007E;
+}
 
 /********** DIVIDER **********/
 
-  hr {
-    border: 0;
-    border-top: 2px solid #ddd;
-    background: #fff;
-    max-width: 500px;
-  }
+hr {
+  border: 0;
+  border-top: 2px dotted #ccc;
+  margin: 10px 0 0 0;
+  background: #fff;
+  width: 100%;
+}
 
-/********** BUTTONS **********/
-    
-  #buttons {
-    margin: 15px auto 0;
-	padding: 10px 10px 2px;
-	border: 1px dashed #999;
-	border-radius: 8px;
-	width: auto;
-	display: table;
-  }
-  
-  input[type="button"] {
-    background: #E5007E;
-    color: #fff;
-    padding: 5px 8px;
-    cursor: pointer;
-    border: 0;
-    border-bottom: 3px solid #F17EBD;
-    border-radius: 5px;
-    opacity: 0.666;
-    margin: 2px 1px 8px;
-  }
-  
-  input[type="button"]:hover {
-    opacity: 1;
-  }
-  
-  input[type="button"].on {
-    background: #000;
-    border-bottom: 3px solid #aaa;
-    opacity: 1;
-    cursor: default;
-  }
-  
 /********** LAYOUT **********/
 
-#breaker {
-	clear: both;
-	font-size: 1px;
+#containerButtons,
+#containerBoxPattern,
+#containerBoxBuildingGuide {
+  display: table;
+  padding: 0;
+  margin: 0 auto 0;
+  width: 100%;
 }
 
-@media (min-width: 1000px) {
-	#boxPattern,
-	#boxTemplate,
-	#boxBuildingGuide {
-		display: table-cell;
-		width: auto;
-		padding: 0 15px;
-	}
-	
-	#page {
-		display: table;
-		width: auto;
-		margin: 0 auto;		
-	}
+#containerButtons,
+#containerBoxPattern,
+#containerBoxBuildingGuide {
+  margin: 20px 0 25px;
 }
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 1150px) {
+  hr {
+    display: none;
+  }
   
+  #buttons,
+  #boxPattern,
+  #boxBuildingGuide {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  #containerButtons,
+  #containerBoxPattern,
+  #containerBoxBuildingGuide {
+    display: table-cell;
+    margin: 15px auto 0;
+    padding: 0 10px;
+    width: auto;
+  }
+  
+  #buildHelp {
+    max-width: 275px;
+  }
+  
+  h2 {
+    margin: 0 0 10px;
+    padding: 0 0 5px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #page {
+    display: table;
+  }
+  
+  #containerFooter {
+    clear: both;
+  }
+}
+

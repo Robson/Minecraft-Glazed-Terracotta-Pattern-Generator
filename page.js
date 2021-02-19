@@ -171,12 +171,11 @@ function generateRandomSequence(availableColours, mustHaveTwoColours) {
 			['00'],
 			['000'],
 			['0000'],
-			['00000'],
 			['00','00'],
 			['000','000'],
 			['000','000','000'],
 			['0000','0000','0000','0000'],
-			['00000000','00000000','00000000','00000000','00000000','00000000','00000000','00000000']
+			//['00000000','00000000','00000000','00000000','00000000','00000000','00000000','00000000']
 		];
 		var sequence = sequences[random(0, sequences.length)];
 		var colours = sequence.slice(0);
@@ -296,7 +295,7 @@ function determineTextColour(colour) {
 }
 
 function showSequence(colours, sequence) {	
-	var minimumPatternLength = 8;
+	var minimumPatternLength = 12;
 	var tileSizeOriginal = 16;
 	var tileSizePattern = 32;
 	var tileSizeTemplate = 64;		
