@@ -40,23 +40,12 @@ Last tested on 19th February 2021.
 
 ## Testing
 
-The webpage in this project uses canvases, which means it needs to be viewed through a web server, such as [Apache](https://en.wikipedia.org/wiki/Apache_HTTP_Server). This guide assumes you know how to use Apache.
-
-After installing Apache, you can then run this on your computer by doing this:
+To run this on your computer:
  * [Download the repository](https://github.com/Robson/Minecraft-Glazed-Terracotta-Pattern-Generator/archive/master.zip).
  * Unzip anywhere.
- * Copy the unzipped files into the Apache web directory.
- * In your browser, navigate to http://localhost/ and the page should appear.
+ * Open *index.html* in your browser.
 
 ## File Descriptions
-
-### Everything in the textures-improved directory
-
-These textures are my in-progress attempt at improving the default textures. These are hidden away and not intended to be used, but they can be accessed by clicking the "r" at the end of the page title.
-
-### Everything in the textures-original directory
-
-These textures are used by the webpage.
 
 ### arrow-black.png + arrow-white.png
 
@@ -72,7 +61,7 @@ This file generates random names for each pattern, which are displayed by hoveri
  
 ## License
 
-The images in the "textures-original" folder are the glazed terracotta textures from Minecraft. Their copyright belongs with Mojang/Microsoft.
+The images are the glazed terracotta textures from Minecraft. Their copyright belongs with Mojang/Microsoft.
 
 Everything else uses the license of the repository.
 
