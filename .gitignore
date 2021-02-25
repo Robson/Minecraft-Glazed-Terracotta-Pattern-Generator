@@ -1,2 +1,6 @@
 # ScreenToGif projects
 *.stg
+
+# ignore the texture directories
+textures-improved/
+textures-original/
