@@ -218,14 +218,6 @@ function fixColours(colour, number) {
 			return (+number + 2) % 4;
 		case 'light_gray':
 			return (+number + 3) % 4;
-		case 'black':
-		case 'blue':
-		case 'cyan':
-		case 'gray':
-		case 'magenta':
-		case 'red':
-		case 'yellow':
-			break;
 	}
 	return number;
 }
@@ -273,15 +265,6 @@ function convertToHtmlColour(colour) {
 
 function determineTextColour(colour) {
 	switch (colour) {						
-		case 'cyan':
-		case 'light_blue':
-		case 'light_gray':
-		case 'lime':
-		case 'orange':
-		case 'pink':
-		case 'white':
-		case 'yellow':
-			return 'black';		
 		case 'black':
 		case 'blue':
 		case 'brown':
@@ -290,8 +273,9 @@ function determineTextColour(colour) {
 		case 'magenta':		
 		case 'purple':
 		case 'red':
-			return 'white';														
-	}
+			return 'white';
+	}	
+	return 'black;
 }
 
 function showSequence(colours, sequence) {	
@@ -505,6 +489,12 @@ function showBuildHelp() {
 	d3.select('#buildHelpShow').style('display', 'none');
 	d3.select('#buildHelp').style('display', null);
 }
+
+function isUsed(a) {
+	return a;
+}
+
+isUsed([showBuildHelp, toggleImprovedTextures, generateMess, generateChaoticSequenceAnyColours, generateChaoticSequenceTwoColours, generateChaoticSequenceSameColour, generateRegularSequenceAlternating]);
 
 makeColourList();
 makeCachedImages();
