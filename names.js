@@ -118,3 +118,9 @@ function generatePaintingName(colour) {
 	
 	return '"' + pattern + '" by ' + painter + ', ' + year;
 }
+
+function isUsed(a) {
+	return a;
+}
+
+isUsed([generatePaintingName]);
