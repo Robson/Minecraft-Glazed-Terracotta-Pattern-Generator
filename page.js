@@ -275,7 +275,7 @@ function determineTextColour(colour) {
 		case 'red':
 			return 'white';
 	}	
-	return 'black;
+	return 'black';
 }
 
 function showSequence(colours, sequence) {	
