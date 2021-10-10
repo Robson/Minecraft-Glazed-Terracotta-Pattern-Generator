@@ -17,6 +17,7 @@ select {
 
 select {
   font-size: 100%;
+  margin: 0 0 12px;
 }
 
 h1,
@@ -35,10 +36,6 @@ h1 {
 #template * {
   padding: 0;
   line-height: 0;
-}
-
-select {
-  margin: 0 0 12px;
 }
 
 #page {
@@ -160,7 +157,7 @@ a:hover {
 hr {
   border: 0;
   border-top: 2px dotted #ccc;
-  margin: 10px 0 0 0;
+  margin: 10px 0 0;
   background: #fff;
   width: 100%;
 }
@@ -172,13 +169,7 @@ hr {
 #containerBoxBuildingGuide {
   display: table;
   padding: 0;
-  margin: 0 auto 0;
   width: 100%;
-}
-
-#containerButtons,
-#containerBoxPattern,
-#containerBoxBuildingGuide {
   margin: 20px 0 25px;
 }
 
