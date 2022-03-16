@@ -60,6 +60,7 @@ input[type="button"] {
   border-radius: 5px;
   opacity: 0.666;
   margin: 2px 1px 8px;
+  vertical-align: top;
 }
 
 input[type="button"]:hover {
@@ -71,6 +72,10 @@ input[type="button"].on {
   border-bottom: 3px solid #aaa;
   opacity: 1;
   cursor: default;
+}
+
+input[type="button"]:active {
+  margin: 4px 1px 6px;
 }
 
 /********** PATTERN **********/
