@@ -202,7 +202,7 @@ function generateRandomSequence(availableColours, mustHaveTwoColours) {
 //   light_gray points to the bottom-left.
 //   lime points to the top-left.
 // that makes it a bit annoying to generate patterns that work for all colours.
-// so this code adds a different amounts of rotation to each colour,
+// so this code adds different amounts of rotation to each colour,
 // which aligns them all to point to the bottom-right.
 function fixColours(colour, number) {
 	switch (colour) {
