@@ -8,110 +8,110 @@
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 		  gtag('config', 'G-2E561F2422');
-		</script>	
+		</script>
 		<!--
 		************************************************
 		The script above is for google analytics.
 		You'll want to remove that if you use this page.
 		************************************************
-		-->	
+		-->
 		<title>Minecraft Glazed Terracotta Pattern Generator</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"> 		
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap"> 			
-		<link rel="stylesheet" href="style.css" type="text/css" />
-		<script src="https://d3js.org/d3.v3.min.js"></script>	
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<script src="https://d3js.org/d3.v3.min.js"></script>
 		<script src="names.js"></script>
 	</head>
 	<body>
-		<div id="imageCache" style="display: none">			
+		<div id="imageCache" style="display: none">
 		</div>
-		<h1>Minecraft <a href="https://minecraft.gamepedia.com/Glazed_Terracotta">Glazed Terracotta</a> Pattern Generato<span onclick="javascript:toggleImprovedTextures()">r</span></h1>		
+		<h1>Minecraft <a href="https://minecraft.gamepedia.com/Glazed_Terracotta">Glazed Terracotta</a> Pattern Generato<span onclick="javascript:toggleImprovedTextures()">r</span></h1>
 		<div id="page">
-			<hr />
-			<div id="containerButtons">				
-				<div id="buttons">					
+			<hr>
+			<div id="containerButtons">
+				<div id="buttons">
 					<h2>Template</h2>
 					<p class="helper">Choose options to generate a template:</p>
 					Colour:
-					<br/>
+					<br>
 					<select id="userColour"></select>
-					<br/>
+					<br>
 					Regular Templates:
 					<br>
-					<input type="button" value="1x1" onclick="generateRegularSequence(1, 1)" />
-					<input type="button" value="1x2" onclick="generateRegularSequence(1, 2)" />
-					<input type="button" value="2x1" onclick="generateRegularSequence(2, 1)" />
-					<input type="button" value="2x2" onclick="generateRegularSequence(2, 2)" />
-					<input type="button" value="2x4" onclick="generateRegularSequenceAlternating(2, 4)" />
-					<input type="button" value="4x2" onclick="generateRegularSequenceAlternating(4, 2)" />
-					<input type="button" value="4x4" onclick="generateRegularSequenceAlternating(4, 4)" />
-					<br/>
+					<input type="button" value="1x1" onclick="generateRegularSequence(1, 1)">
+					<input type="button" value="1x2" onclick="generateRegularSequence(1, 2)">
+					<input type="button" value="2x1" onclick="generateRegularSequence(2, 1)">
+					<input type="button" value="2x2" onclick="generateRegularSequence(2, 2)">
+					<input type="button" value="2x4" onclick="generateRegularSequenceAlternating(2, 4)">
+					<input type="button" value="4x2" onclick="generateRegularSequenceAlternating(4, 2)">
+					<input type="button" value="4x4" onclick="generateRegularSequenceAlternating(4, 4)">
+					<br>
 					Chaotic Templates:
 					<br>
-					<input type="button" value="Chosen Colour" onclick="generateChaoticSequenceSameColour()" />
-					<input type="button" value="Two Colours" onclick="generateChaoticSequenceTwoColours()" />
-					<input type="button" value="Any Colours" onclick="generateChaoticSequenceAnyColours()" />
-					<!--<input type="button" value="Mess" onclick="generateMess()" />-->
+					<input type="button" value="Chosen Colour" onclick="generateChaoticSequenceSameColour()">
+					<input type="button" value="Two Colours" onclick="generateChaoticSequenceTwoColours()">
+					<input type="button" value="Any Colours" onclick="generateChaoticSequenceAnyColours()">
+					<!--<input type="button" value="Mess" onclick="generateMess()">-->
 					<p class="helper">Generated template:</p>
 					<div id="boxTemplate">
 						<div id="template">
 							<canvas id="outputTemplateCanvas"></canvas>
-							<img id="outputTemplateImage" src="output.png" alt="Template" />
+							<img id="outputTemplateImage" src="output.png" alt="Template">
 						</div>
-					</div>			
+					</div>
 				</div>
 			</div>
-			<hr />
+			<hr>
 			<div id="containerBoxPattern">
-				<div id="boxPattern">			
+				<div id="boxPattern">
 					<h2>Pattern</h2>
 					<p class="helper">When the template is repeated,<br />it would make this pattern:</p>
 					<div id="output">
 						<canvas id="outputPatternCanvas"></canvas>
-						<img id="outputPatternImage" src="output.png" alt="Pattern" />
+						<img id="outputPatternImage" src="output.png" alt="Pattern">
 					</div>
 				</div>
 			</div>
-			<hr />
+			<hr>
 			<div id="containerBoxBuildingGuide">
 				<div id="boxBuildingGuide">
 					<h2>Building Guide</h2>
 					<p id="buildHelpShow">
-						<input type="button" value="Help" onclick="showBuildHelp()" />
+						<input type="button" value="Help" onclick="showBuildHelp()">
 					</p>
 					<p id="buildHelp" style="display: none">
 						The Building Guide grid matches the Template grid.
-						<br/>
+						<br>
 						To make the template horizontally:
-						<br/>
+						<br>
 						Decide where you want to draw the template.
-						<br/>
+						<br>
 						When you are facing the direction you want to view the template, this is up.
-						<br/>
+						<br>
 						Place each block, whilst looking in the direction of the arrow.
-					</p>			
+					</p>
 					<table id="buildingGuide">
-						
+
 					</table>
 				</div>
 			</div>
-			<hr />
-		</div>		
+			<hr>
+		</div>
 		<div id="containerFooter">
-			<div id="footer">	
+			<div id="footer">
 				<p>
 					You can use the current URL to share/bookmark this pattern.
 				</p>
 				<p>
 					<a href="https://github.com/Robson/Minecraft-Glazed-Terracotta-Pattern-Generator">View the code</a>. Written by <a href="https://robson.plus">Robson</a>.
-				</p>	
-			</div>			
-		</div>		
-		
+				</p>
+			</div>
+		</div>
+
 		<script src="page.js"></script>
 
 	</body>

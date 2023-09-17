@@ -373,20 +373,22 @@ function showSequence(colours, sequence) {
 		for (a = 0; a < repetitionsY; a++) {
 			for (var y = 0; y < duplicatedSeq.length; y++) {
 				for (var x = 0; x < duplicatedSeq[0].length; x++) {
-					var whereX = (tileSizePattern / 2) + (tileSizePattern * x)
+					var whereX = (tileSizePattern / 2) + (tileSizePattern * x);
 					var whereY = (tileSizePattern / 2) + (tileSizePattern * (a * duplicatedSeq.length + y));
-					// these numbers are degreess
-					var rot = (90 * fixColours(duplicatedCol[y][x], duplicatedSeq[y][x])) * Math.PI / 180;
-					context.translate(whereX, whereY);
-					context.rotate(rot);
-					context.drawImage(
-						document.getElementById('gt_' + duplicatedCol[y][x]),
-						0, 0,
-						tileSizeOriginal, tileSizeOriginal,
-						-(tileSizePattern / 2), -(tileSizePattern / 2),
-						tileSizePattern, tileSizePattern);
-					context.rotate(-rot);
-					context.translate(-whereX, -whereY);
+					//if (whereX / tileSizePattern < 5 && whereY / tileSizePattern < 5) {						
+						// these numbers are degreess
+						var rot = (90 * fixColours(duplicatedCol[y][x], duplicatedSeq[y][x])) * Math.PI / 180;
+						context.translate(whereX, whereY);
+						context.rotate(rot);
+						context.drawImage(
+							document.getElementById('gt_' + duplicatedCol[y][x]),
+							0, 0,
+							tileSizeOriginal, tileSizeOriginal,
+							-(tileSizePattern / 2), -(tileSizePattern / 2),
+							tileSizePattern, tileSizePattern);
+						context.rotate(-rot);
+						context.translate(-whereX, -whereY);
+					//}
 				}
 			}
 		}
